@@ -88,6 +88,7 @@
   };
 
   networking.networkmanager.enable = true;
+  networking.firewall.enable = false;
   services.resolved.enable = true;
 
   services.flatpak.enable = true;
@@ -103,9 +104,9 @@
   services.xserver = {
     enable = true;
     excludePackages = with pkgs; [ xterm ];
-    displayManager.gdm.enable = true;
     xkb.layout = "pl";
   };
+  services.displayManager.gdm.enable = true;
 
   systemd.user.services.hyprpolkitagent = {
     description = "hyprpolkitagent";

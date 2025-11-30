@@ -8,7 +8,7 @@
   imports = [ ./base.nix ];
   networking.hostName = "jan-pc";
   services.openssh.enable = true;
-  services.xserver.displayManager.gdm.autoSuspend = false;
+  services.displayManager.gdm.autoSuspend = false;
   networking.networkmanager.wifi.powersave = false;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";

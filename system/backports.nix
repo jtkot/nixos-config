@@ -6,7 +6,7 @@ repo:
       final: prev:
       let
         pkgs = import repo {
-          system = final.system;
+          system = final.stdenv.hostPlatform.system;
           config = final.config;
         };
       in

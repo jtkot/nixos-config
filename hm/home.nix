@@ -3,7 +3,7 @@
   home.username = "jan";
   home.homeDirectory = "/home/jan";
 
-  home.stateVersion = "25.05";
+  home.stateVersion = "25.11";
   home.packages = with pkgs; [
     bottom
     fastfetch
