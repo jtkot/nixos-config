@@ -16,6 +16,7 @@
     imagemagick
     jujutsu
     jq
+	license-cli
     mpv
     nix-index
     nix-tree
