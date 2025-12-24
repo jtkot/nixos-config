@@ -8,27 +8,29 @@
     bottom
     fastfetch
     file
+    fzf
     gh
     gimp
     git
-    nur.repos.Ev357.helium
     ibm-plex
     imagemagick
-    jujutsu
     jq
-	license-cli
+    jujutsu
+    license-cli
     mpv
     nix-index
     nix-tree
     nixd
     nixfmt-rfc-style
+    nur.repos.Ev357.helium
     p7zip
     patchelf
     ripgrep
     tmux
-    xdg-user-dirs
     widevine-cdm
+    xdg-user-dirs
     yq
+    yt-dlp
   ];
 
   fonts.fontconfig.enable = true;
