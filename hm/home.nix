@@ -28,10 +28,13 @@
     ripgrep
     tmux
     widevine-cdm
-    xdg-user-dirs
     yq
     yt-dlp
   ];
 
   fonts.fontconfig.enable = true;
+  xdg.userDirs = {
+    enable = true;
+    createDirectories = true;
+  };
 }
