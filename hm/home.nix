@@ -25,6 +25,7 @@
     nur.repos.Ev357.helium
     p7zip
     patchelf
+	qview
     ripgrep
     tmux
     widevine-cdm
