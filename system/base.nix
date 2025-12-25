@@ -86,6 +86,7 @@
     enable = true;
     withUWSM = true;
   };
+  programs.command-not-found.enable = true;
 
   networking.networkmanager.enable = true;
   networking.firewall.enable = false;
