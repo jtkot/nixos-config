@@ -17,9 +17,12 @@
   hardware.bluetooth.enable = true;
   services.hardware.openrgb.enable = true;
 
-  hardware.nvidia.open = true;
-  hardware.nvidia.powerManagement.enable = true;
   services.xserver.videoDrivers = [ "nvidia" ];
+  hardware.nvidia = {
+    open = true;
+    powerManagement.enable = true;
+    nvidiaSettings = false;
+  };
 
   boot.initrd.availableKernelModules = [
     "xhci_pci"
