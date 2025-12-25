@@ -70,22 +70,6 @@
     };
   };
 
-  programs.dconf.profiles.gdm = {
-    databases = [
-      {
-        lockAll = true;
-        settings = {
-          "org/gnome/mutter" = {
-            text-scaling-factor = lib.gvariant.mkArray [
-              "scale-monitor-framebuffer"
-              "xwayland-native-scaling"
-            ];
-          };
-        };
-      }
-    ];
-  };
-
   # ddcci
   hardware.i2c.enable = true;
   systemd.services."ddcci@" = {
