@@ -92,6 +92,7 @@
     withUWSM = true;
   };
   programs.command-not-found.enable = true;
+  programs.gnome-disks.enable = true;
 
   networking.networkmanager.enable = true;
   networking.firewall.enable = false;
@@ -103,6 +104,7 @@
   services.playerctld.enable = true;
   services.timesyncd.servers = [ "time.apple.com" ];
   services.printing.enable = true;
+  services.upower.enable = true;
   services.pipewire = {
     enable = true;
     audio.enable = true;
