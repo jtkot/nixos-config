@@ -13,6 +13,7 @@
     config.allowUnfree = true;
     overlays = [ (import ./overrides.nix) ];
   };
+  documentation.nixos.enable = false;
 
   # NixOS 25.05 patches
   services.hardware.openrgb.package = pkgs.openrgb-beta;
@@ -33,7 +34,7 @@
   boot.plymouth.enable = true;
 
   security.polkit.enable = true;
-  security.soteria.enable = true;
+  security.rtkit.enable = true;
   security.sudo.extraConfig = "Defaults pwfeedback";
 
   time.timeZone = "Europe/Warsaw";
@@ -60,6 +61,10 @@
     backports.ghostty
     grim
     hyprpaper
+    hyprlock
+    hyprpolkitagent
+	hypridle
+	hyprsunset
     nautilus
     nh
     sbctl
