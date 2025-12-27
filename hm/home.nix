@@ -5,10 +5,13 @@
 
   home.stateVersion = "25.11";
   home.packages = with pkgs; [
+    bintools
     bottom
+	d-spy
     fastfetch
     file
     fzf
+    gdb
     gh
     gimp
     git
@@ -25,12 +28,15 @@
     nur.repos.Ev357.helium
     p7zip
     patchelf
-	qview
+    qview
+    pax-utils
     ripgrep
     tmux
+    unzip
     widevine-cdm
     yq
     yt-dlp
+    zbar
   ];
 
   fonts.fontconfig.enable = true;
