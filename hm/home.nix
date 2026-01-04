@@ -7,7 +7,7 @@
   home.packages = with pkgs; [
     bintools
     bottom
-	d-spy
+    d-spy
     fastfetch
     file
     fzf
@@ -15,7 +15,7 @@
     gh
     gimp
     git
-    ibm-plex
+    googlesans-code
     imagemagick
     jq
     jujutsu
