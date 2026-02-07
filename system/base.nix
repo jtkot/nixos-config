@@ -69,6 +69,7 @@
     nh
     sbctl
     slurp
+	sushi
     walker
     wl-clipboard
   ];
