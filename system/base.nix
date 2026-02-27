@@ -20,7 +20,6 @@
 
   boot.consoleLogLevel = 0;
   boot.initrd.verbose = false;
-  boot.kernelPackages = pkgs.linuxPackages_lqx;
   boot.kernelParams = [
     "quiet"
     "udev.log_level=3"
@@ -96,9 +95,11 @@
   programs.gnome-disks.enable = true;
 
   networking.networkmanager.enable = true;
+  networking.networkmanager.wifi.backend = "iwd";
   networking.firewall.enable = false;
   services.resolved.enable = true;
 
+  services.dbus.implementation = "broker";
   services.flatpak.enable = true;
   services.fwupd.enable = true;
   services.gvfs.enable = true;
