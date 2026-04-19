@@ -20,10 +20,16 @@
   services.xserver.videoDrivers = [ "nvidia" ];
   hardware.nvidia = {
     open = true;
-    powerManagement.enable = true;
     nvidiaSettings = false;
   };
 
+  # NVIDIA 595+; remove it in 26.05
+  hardware.nvidia.powerManagement.enable = false; # enable this!
+  hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.latest;
+  boot.kernelPackages = pkgs.backports.linuxPackages;
+  boot.kernelParams = [ "nvidia.NVreg_UseKernelSuspendNotifiers=1" ];
+
+  boot.kernelModules = [ "kvm-intel" ];
   boot.initrd.availableKernelModules = [
     "xhci_pci"
     "thunderbolt"
