@@ -55,22 +55,22 @@
 
   environment.systemPackages = with pkgs; [
     adwaita-icon-theme
-    ags
     brightnessctl
     backports.ghostty
     grim
     hyprpaper
     hyprlock
     hyprpolkitagent
-	hypridle
-	hyprsunset
+    hypridle
+    hyprsunset
     nautilus
     nh
     sbctl
     slurp
-	sushi
+    sushi
     walker
     wl-clipboard
+    quickshell
   ];
   fonts.packages = [ pkgs.font-awesome ];
 
