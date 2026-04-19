@@ -63,7 +63,7 @@
   environment.systemPackages = with pkgs; [
     adwaita-icon-theme
     brightnessctl
-    backports.ghostty
+    ghostty
     grim
     hyprpaper
     hyprlock
