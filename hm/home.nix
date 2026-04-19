@@ -7,12 +7,14 @@
   home.packages = with pkgs; [
     bintools
     bottom
+    cider-2
     d-spy
     fastfetch
     file
     fzf
     gdb
     gh
+    ghostty
     gimp
     git
     googlesans-code
@@ -21,10 +23,11 @@
     jujutsu
     license-cli
     mpv
+    neovim
     nix-index
     nix-tree
     nixd
-    nixfmt-rfc-style
+    nixfmt
     nur.repos.Ev357.helium
     p7zip
     patchelf
@@ -43,5 +46,6 @@
   xdg.userDirs = {
     enable = true;
     createDirectories = true;
+    setSessionVariables = true; # is it necessary?
   };
 }
