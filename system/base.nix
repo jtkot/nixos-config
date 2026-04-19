@@ -18,6 +18,13 @@
   # NixOS 25.05 patches
   services.hardware.openrgb.package = pkgs.openrgb-beta;
 
+  # Workaround for Unreal Engine
+  system.activationScripts.binbash = {
+    text = ''
+      ln -sfn /bin/sh /bin/bash
+    '';
+  };
+
   boot.consoleLogLevel = 0;
   boot.initrd.verbose = false;
   boot.kernelParams = [
@@ -87,6 +94,7 @@
     enable = true;
     defaultEditor = true;
   };
+  programs.nix-ld.enable = true;
   programs.hyprland = {
     enable = true;
     withUWSM = true;
